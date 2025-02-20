@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+div {
+	font-family: monospace;
+	padding: 10px;
+}
+
+body {
+
+    background-color: #ffe6ee; 
+    color: #333;
+}
+
+/* Asegúrate de que los contenedores de los botones de radio estén en línea */
+.fs-radio-group {
+    display: flex;
+    gap: 15px; /* Espacio entre los botones de radio */
+}
+
+/* Alineación de cada campo de radio */
+.fs-radio-field {
+    display: flex;
+    align-items: center;
+}
+
+/* Asegúrate de que las etiquetas estén al lado del radio button */
+.fs-label {
+    margin-left: 8px; /* Ajusta el espacio entre el botón de radio y el texto */
+}
+
+.mns {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    padding: 10px;
+  }
+  

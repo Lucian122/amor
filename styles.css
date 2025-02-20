@@ -1,13 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-
 div {
-	font-family: monospace;
-	padding: 20px;
+    font-family: monospace;
+    padding: 10px;
 }
 
+/* Centrar los elementos en el body en columna */
 body {
-
-    background-color: #ffe6e6; /* Gris claro */
+    background-color: #ffe6ee;  /* Color de fondo rosado claro */
     color: #333;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; /* Centrar el texto dentro del body */
+    display: flex;
+    flex-direction: column; /* Cambia la dirección a columna */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 100vh; /* Asegura que el body tenga altura completa */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+/* Contenedor de los botones */
+.boton-container {
+    display: flex;
+    flex-wrap: wrap; /* Hace que los botones se muevan a la siguiente línea */
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 10px; /* Espacio entre los botones */
+}
+
+/* Estilo para los botones */
+.boton {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #f0a3c1;  /* Color de fondo rosado suave */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 120px; /* Establece el tamaño de los botones */
+    box-sizing: border-box;
+    transition: background-color 0.3s ease; /* Transición suave para hover */
+}
+
+.boton:hover {
+    background-color: #e97b9f; /* Color de fondo rosado un poco más oscuro */
+}
+
+/* Asegúrate de que los contenedores de los botones de radio estén en línea */
+.fs-radio-group {
+    display: flex;
+    gap: 15px; /* Espacio entre los botones de radio */
+}
+
+/* Alineación de cada campo de radio */
+.fs-radio-field {
+    display: flex;
+    align-items: center;
+}
+
+/* Asegúrate de que las etiquetas estén al lado del radio button */
+.fs-label {
+    margin-left: 8px; /* Ajusta el espacio entre el botón de radio y el texto */
+}
+
+/* Estilo específico para la clase .mns */
+.mns {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    padding: 10px;
+    text-align: center; /* Centrar el texto dentro de la clase .mns */
 }
