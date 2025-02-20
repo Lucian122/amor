@@ -13,10 +13,11 @@ body {
     text-align: center; /* Centrar el texto dentro del body */
     display: flex;
     flex-direction: column; /* Cambia la dirección a columna */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
-    height: 100vh; /* Asegura que el body tenga altura completa */
+    justify-content: flex-start; /* Alinea los elementos desde la parte superior */
+    align-items: center; /* Centra los elementos horizontalmente */
+    min-height: 100vh; /* Permite que el body ocupe al menos el 100% de la altura de la ventana */
     margin: 0; /* Elimina márgenes por defecto */
+    padding-top: 20px; /* Agrega un pequeño margen superior para evitar que se quede pegado al borde superior */
 }
 
 /* Contenedor de los botones */
@@ -70,4 +71,16 @@ body {
     font-size: 50px;
     padding: 10px;
     text-align: center; /* Centrar el texto dentro de la clase .mns */
+}
+
+/* Media query para dispositivos con pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        min-height: auto; /* Permite que el contenido crezca sin limitar la altura */
+        padding-top: 10px; /* Reduce el relleno superior en dispositivos pequeños */
+    }
+
+    .mns {
+        font-size: 40px; /* Reduce el tamaño de la fuente en dispositivos pequeños */
+    }
 }
