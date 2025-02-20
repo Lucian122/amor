@@ -18,6 +18,15 @@ body {
     min-height: 100vh; /* Permite que el body ocupe al menos el 100% de la altura de la ventana */
     margin: 0; /* Elimina márgenes por defecto */
     padding-top: 20px; /* Agrega un pequeño margen superior para evitar que se quede pegado al borde superior */
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+/* Contenedor de las imágenes */
+img {
+    width: 100%; /* Hace que las imágenes ocupen el ancho completo */
+    max-width: 100%; /* Asegura que no se estiren más allá del ancho de la pantalla */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 15px; /* Agrega un margen inferior entre las imágenes */
 }
 
 /* Contenedor de los botones */
@@ -82,5 +91,11 @@ body {
 
     .mns {
         font-size: 40px; /* Reduce el tamaño de la fuente en dispositivos pequeños */
+    }
+
+    /* Ajuste específico para las imágenes en pantallas pequeñas */
+    img {
+        width: 100%; /* Asegura que las imágenes ocupen todo el ancho en móviles */
+        height: auto; /* Mantiene la proporción correcta de las imágenes */
     }
 }
